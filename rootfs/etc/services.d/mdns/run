@@ -3,4 +3,4 @@
 # Start mDNS repeater service
 # ==============================================================================
 
-exec mdns-repeater -f hassio
+exec mdns-repeater -f mcio

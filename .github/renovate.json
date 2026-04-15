@@ -6,21 +6,21 @@
       "customType": "regex",
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
-        "BUILD_FROM=(?<image>ghcr\\.io/home-assistant/base:(?<alpineVersion>alpine[0-9\\.]+))-(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+)"
+        "ARG BUILD_FROM=ghcr\.io/muthur-command/base:(?<currentValue>[^\s]+)"
       ],
-      "datasourceTemplate": "github-releases",
-      "depNameTemplate": "home-assistant/docker-base"
+      "datasourceTemplate": "docker",
+      "packageNameTemplate": "muthur-command/base",
+      "registryUrlTemplate": "https://ghcr.io"
     }
   ],
   "packageRules": [
     {
-      "matchDatasources": ["github-releases"],
-      "matchDepNames": ["home-assistant/docker-base"],
-      "groupName": "docker-base",
-      "commitMessageTopic": "home-assistant/docker-base image",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["muthur-command/base"],
+      "groupName": "docker-base-alpine",
+      "commitMessageTopic": "muthur-command/base image",
       "commitMessageExtra": "to {{newVersion}}",
-      "versioning": "pep440",
-      "minimumReleaseAge": "1 hour"
+      "versioning": "loose"
     }
   ]
 }

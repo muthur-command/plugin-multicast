@@ -8,4 +8,4 @@ on:
 
 jobs:
   workflows:
-    uses: home-assistant/actions/.github/workflows/stale.yaml@master
+    uses: muthur-command/actions/.github/workflows/stale.yaml@mc
