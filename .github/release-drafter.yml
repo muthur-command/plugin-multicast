@@ -1,6 +1,4 @@
 template: |
-  **MCOS** multicast plugin (`ghcr.io/muthur-command/mcio-multicast`, **`io.mcio.*`** labels). See **README.md**.
-
   ## What's Changed
 
   $CHANGES

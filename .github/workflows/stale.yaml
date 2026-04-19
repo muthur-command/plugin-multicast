@@ -6,6 +6,10 @@ on:
     - cron: "45 5 * * *"
   workflow_dispatch:
 
+permissions:
+  issues: write
+  pull-requests: write
+
 jobs:
   workflows:
     uses: muthur-command/actions/.github/workflows/stale.yaml@mc

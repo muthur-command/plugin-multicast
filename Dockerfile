@@ -9,4 +9,4 @@ RUN     apk add --no-cache --virtual .build-deps         build-base         git 
 
 COPY rootfs /
 
-LABEL     io.mcio.type="multicast"     org.opencontainers.image.title="MCOS multicast plugin"     org.opencontainers.image.description="Supervisor-managed multicast plugin container for MCOS"     org.opencontainers.image.authors="muthur-command (fork; upstream copyright in LICENSE)"     org.opencontainers.image.url="https://github.com/muthur-command/plugin-multicast"     org.opencontainers.image.documentation="https://github.com/muthur-command/plugin-multicast"     org.opencontainers.image.licenses="Apache License 2.0"
+LABEL     io.mcio.type="multicast"     org.opencontainers.image.title="Muthur Command OS multicast plugin"     org.opencontainers.image.description="Supervisor-managed multicast plugin container for Muthur Command OS"     org.opencontainers.image.authors="muthur-command (fork; upstream copyright in LICENSE)"     org.opencontainers.image.url="https://github.com/muthur-command/plugin-multicast"     org.opencontainers.image.documentation="https://github.com/muthur-command/plugin-multicast"     org.opencontainers.image.licenses="Apache License 2.0"
