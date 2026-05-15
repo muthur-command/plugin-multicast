@@ -43,7 +43,7 @@ jobs:
 
       - name: Get build matrix
         id: matrix
-        uses: muthur-command/builder/actions/prepare-multi-arch-matrix@2026.04.2
+        uses: muthur-command/builder/actions/prepare-multi-arch-matrix@2026.05.0
         with:
           architectures: ${{ env.ARCHITECTURES }}
           image-name: ${{ env.IMAGE_NAME }}
@@ -67,7 +67,7 @@ jobs:
 
       - name: Build image
         id: build
-        uses: muthur-command/builder/actions/build-image@2026.04.2
+        uses: muthur-command/builder/actions/build-image@2026.05.0
         with:
           arch: ${{ matrix.arch }}
           container-registry-password: ${{ secrets.GITHUB_TOKEN }}
@@ -90,7 +90,7 @@ jobs:
       packages: write
     steps:
       - name: Publish multi-arch manifest
-        uses: muthur-command/builder/actions/publish-multi-arch-manifest@2026.04.2
+        uses: muthur-command/builder/actions/publish-multi-arch-manifest@2026.05.0
         with:
           architectures: ${{ env.ARCHITECTURES }}
           container-registry-password: ${{ secrets.GITHUB_TOKEN }}
