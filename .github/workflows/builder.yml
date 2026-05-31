@@ -21,7 +21,7 @@ env:
   ARCHITECTURES: '["amd64", "aarch64"]'
   BUILD_NAME: multicast
   BUILD_TYPE: plugin
-  IMAGE_NAME: mcio-multicast
+  IMAGE_NAME: mcos-multicast
 
 permissions:
   contents: write

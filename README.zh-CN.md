@@ -2,9 +2,9 @@
 
 英文文档: [`README.md`](./README.md)
 
-由 Supervisor 管理的 **multicast** 插件容器，面向 **Muthur Command OS**；发布为 **`ghcr.io/muthur-command/{arch}-mcio-multicast`**（多架构清单 **`mcio-multicast`**）。
+由 Supervisor 管理的 **multicast** 插件容器，面向 **Muthur Command OS**；发布为 **`ghcr.io/muthur-command/{arch}-mcos-multicast`**（多架构清单 **`mcos-multicast`**）。
 
-基于 **`ghcr.io/muthur-command/base`** 构建；OCI 标签使用 **`io.mcio.*`**。
+基于 **`ghcr.io/muthur-command/base`** 构建；OCI 标签使用 **`io.mcos.*`**。
 
 ## 来源
 

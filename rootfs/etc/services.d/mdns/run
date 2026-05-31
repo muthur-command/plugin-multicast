@@ -3,4 +3,4 @@
 # Start mDNS repeater service
 # ==============================================================================
 
-exec mdns-repeater -f mcio
+exec mdns-repeater -f mcos
