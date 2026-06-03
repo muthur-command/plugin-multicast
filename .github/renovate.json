@@ -6,7 +6,17 @@
       "customType": "regex",
       "fileMatch": ["^Dockerfile$"],
       "matchStrings": [
-        "ARG BUILD_FROM=ghcr\.io/muthur-command/base:(?<currentValue>[^\s]+)"
+        "ARG BUILD_FROM=ghcr\\.io/muthur-command/base:(?<currentValue>[^\\s]+)"
+      ],
+      "datasourceTemplate": "docker",
+      "packageNameTemplate": "muthur-command/base",
+      "registryUrlTemplate": "https://ghcr.io"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^\\.github/workflows/builder\\.yml$"],
+      "matchStrings": [
+        "cosign-base-verify: ghcr\\.io/muthur-command/base:(?<currentValue>[^\\s]+)"
       ],
       "datasourceTemplate": "docker",
       "packageNameTemplate": "muthur-command/base",
@@ -17,7 +27,7 @@
     {
       "matchDatasources": ["docker"],
       "matchPackageNames": ["muthur-command/base"],
-      "groupName": "docker-base-alpine",
+      "groupName": "docker-base-base",
       "commitMessageTopic": "muthur-command/base image",
       "commitMessageExtra": "to {{newVersion}}",
       "versioning": "loose"
