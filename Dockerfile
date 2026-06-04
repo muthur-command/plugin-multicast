@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/muthur-command/base:3.23-2026.06.0
+ARG BUILD_FROM=ghcr.io/muthur-command/base:3.23-2026.06.2
 FROM ${BUILD_FROM}
 
 SHELL ["/bin/ash", "-o", "pipefail", "-c"]
